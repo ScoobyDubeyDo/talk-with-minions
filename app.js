@@ -7,16 +7,14 @@ function urlEdit(input) {
     return url + "?" + "text=" + input;
 }
 
-function errorHand(error) {
-    console.log("error came", error);
-    alert("BROKE !!! BROKE !!! BROKE !!!");
-}
-
 btnCon.addEventListener("click", () => {
     var conv = (one) => one.json();
     var disp = (two) => {
         var returned = two.contents.translated;
         screen.innerText = returned;
     };
-    fetch(urlEdit(iptArea.value)).then(conv).then(disp).catch(errorHand());
+    fetch(urlEdit(iptArea.value))
+        .then(conv)
+        .then(disp)
+        .catch((err) => console.log("error came!!",err));
 });

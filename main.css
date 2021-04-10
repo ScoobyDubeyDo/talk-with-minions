@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:wght@400;700&display=swap");
+
+* {
+    font-family: "Grandstander", cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --yellow: #f5e050;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+.heading {
+    text-align: center;
+    background-color: var(--yellow);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.container {
+    width: 45rem;
+    margin: 20vh auto;
+}
+
+.container p{
+    background-color: white;
+    width: max-content
+}
+
+#input-area {
+    display: block;
+    font-size: large;
+    height: 8rem;
+    width: 100%;
+    border: 1px solid black;
+    padding: 1rem;
+    resize: none;
+}
+
+#input-area::placeholder {
+    font-size: large;
+}
+
+#output {
+    background-color: white;
+    padding: 1rem;
+    height: 8rem;
+    border: 1px solid black;
+}
+
+#con-btn {
+    padding: 1rem;
+    background-color: var(--yellow);
+    border: none;
+    margin: 1rem 0;
+}
+
+.about {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--yellow);
+}
+
+.center {
+    width: 45rem;
+    padding: 1rem;
+    margin: auto;
+}
+
+@media /*(min-width: 320px) and*/ (max-width: 480px) /* Mobile */ {
+    body {
+        background-image: url(original.jpg);
+        background-size: auto;
+    }
+
+    .container {
+        margin: 49vh auto;
+    }
+
+    #input-area,
+    #output {
+        height: 15rem;
+        width: 90%;
+        margin: auto;
+    }
+
+.container p {
+    padding-left: 34px;
+}
+
+    #con-btn {
+        display: block;
+        margin: 1rem auto;
+    }
+}

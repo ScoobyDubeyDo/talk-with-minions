@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talk bananas!!!</title>
-</head>
-<body>
-    <h1>We talk bananas</h1>
-    <textarea style="display: block;" id="input-area" cols="30" rows="10"></textarea>
-    <button id="con-btn">Convert</button>
-    <div id="output" style="height: 30vh;border: 1px solid black;"></div>
-</body>
-<script src="app.js" ></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./main.css" />
+        <title>Talk bananas!!!</title>
+    </head>
+    <body>
+        <div class="heading">
+            <h1>We talk bananas</h1>
+        </div>
+        <div class="container">
+            <textarea
+                id="input-area"
+                placeholder="Enter any text in English"
+            ></textarea>
+            <button id="con-btn">Convert to bananas!!!</button>
+            <p> Translation will come here 👇 </p>
+            <div id="output"></div>
+        </div>
+        <div class="about">
+            <h3 class="center">About</h3>
+            <p class="center">
+                Are you a fan of minions? Did you know that the gibberish they
+                say is an actual language. Use the translator to convert your
+                text from English to Minion speak or Banana language.
+            </p>
+        </div>
+    </body>
+    <script src="app.js"></script>
 </html>
